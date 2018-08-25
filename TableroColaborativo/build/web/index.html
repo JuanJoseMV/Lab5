@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/Titulos.css">
+        <link rel="stylesheet" type="text/css" href="css/Botones.css">
+    </head>
+    <body style="background-color: #F2CD34">
+        <h1><span>tabler</span><span class="o">o</span>
+            <span>compartid</span><span class="o">o</span></h1>
+        <div id="output"></div>
+        <div class="add-button">
+            <div class="sub-button tl" onclick="changeColorR()"></div>
+            <div class="sub-button tr" onclick="changeColorA()"></div>
+            <div class="sub-button bl" onclick="changeColorN()"></div>
+            <div class="sub-button br" onclick="changeColorV()"></div>
+        </div>
+        
+        <table>
+            <tr>
+                <td>
+                    <canvas id="myCanvas" width="800" height="500"
+                            style="border:1px solid #000000;"></canvas>
+                </td>
+                <td>
+                    <form name ="inputForm">
+                        <table>
+                            <tr>
+                                <th>Color</th>
+                                <td><input type="radio" name="color" value="#FF0000" checked hidden> Rojo</td>
+                                <td><input type="radio" name="color" value="#0000FF" hidden> Azul</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="radio" name="color" value="#FF9900" hidden> Naranja</td>
+                                <td><input type="radio" name="color" value="#33CC33" hidden> Verde</td>
+                            </tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr></tr>
+                            <tr>
+                                <th>Forma</th>
+                                <td><input type="radio" name="shape"  value="square" checked> Cuadrado</td>
+                                <td><input type="radio" name="shape"  value="circle"> Círculo</td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+        
+        <button id="Borrar" >Borrar</button>
+        <button id="Guardar">Guardar</button>
+        <script type="text/javascript" src="boton.js"></script> 
+        <script type="text/javascript" src="websocket.js"></script> 
+        <script type="text/javascript" src="tablero.js"></script> 
+       
+    </body>
+</html>
